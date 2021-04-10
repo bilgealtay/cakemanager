@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom"
+import { API_URL } from "../utils/constants"
 
 
 class Table extends Component {
 
    componentDidMount = () => {
-      axios.get(`http://localhost:8282/`)
+      axios.get(`${API_URL}/`)
          .then(res => {
             const cakes = res.data;
             this.setState({ cakes });
