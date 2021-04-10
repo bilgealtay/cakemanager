@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom"
 import { API_URL } from "../utils/constants"
+import { DownloadPage } from './downloadPage.js';
 
 
 class Table extends Component {
@@ -52,9 +53,14 @@ class Table extends Component {
                {this.renderTableData()}
             </table>
 
+            <div><DownloadPage /></div>
+
             <Link to="createNew">
                <button className='btn-primary'>Create</button>
             </Link>
+
+
+
          </div>
       )
    }
