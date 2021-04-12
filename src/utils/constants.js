@@ -1,1 +1,1 @@
-export const API_URL = 'http://localhost:8282/';
+export const API_URL = 'https://cakemanager-api.herokuapp.com/';
